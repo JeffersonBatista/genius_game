@@ -54,6 +54,7 @@ body {
 
 .bg-footer{
     text-align: center;
+    font-weight: bold;
     background-color: black;
     color:black;
 }

@@ -3,6 +3,12 @@ body {
     background-color: black;
 }
 
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
 .main-game{
     height: 100vh;
     width: 100vw;

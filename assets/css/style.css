@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
     background-color: black;
 }
@@ -50,4 +50,10 @@ body{
 
 .selected{
     opacity: 0.8;
+}
+
+.bg-footer{
+    text-align: center;
+    background-color: black;
+    color:black;
 }

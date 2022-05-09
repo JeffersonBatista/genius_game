@@ -24,14 +24,14 @@ let lightColor = (element, number) =>{
     number = number * 500;
     setTimeout(() =>{
         element.classList.add('selected');
-    },number -250);
+    },number - 250);
     setTimeout(() =>{
         element.classList.remove('selected');
     });
 }
 //Função checar click
 let checkOrder = () =>{
-    for (let i in checkOrder) {
+    for (let i in clickOrder) {
         if(clickOrder[i] != order[i]){
             gameOver();
             break;
@@ -65,7 +65,7 @@ let createColorElement = (color) =>{
         return yellow;
     }else if(color == 3){
         return blue;
-    };
+    }
 }
 
 //Função próximo nível
@@ -89,9 +89,15 @@ let playGame = () =>{
     nextLevel();
 }
 
-green.addEventListener('click', click(0));
+/*green.addEventListener('click', click(0));
 red.addEventListener('click', click(1));
 yellow.addEventListener('click', click(2));
-blue.addEventListener('click', click(3));
+blue.addEventListener('click', click(3));*/
 
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
+
+//Inicio do game
 playGame();
